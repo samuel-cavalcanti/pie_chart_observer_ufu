@@ -116,7 +116,7 @@ public class CourseRecordSubject implements Subject<Vector<CourseRecord>> {
 Parece que eu nem preciso ler o resto da classe para entender o ela faz,
 levando em conta que o leitor conhece o design pattern. CourseRecordSubject é um bom nome.
 
-Observamos o CourseRecordSubject que é um __ConcreteSubject__
+Observamos que o CourseRecordSubject é um __ConcreteSubject__
 logo, não é interessante extender classes concretas, melhor decompor. As dependências ficaram assim:
 
 ```java
