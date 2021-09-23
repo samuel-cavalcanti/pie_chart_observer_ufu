@@ -66,7 +66,7 @@ public interface Observer<Event> {
 }
 ```
 
-Dessa forma, o design pattern não conhece a sua implementação, mas sabe um evento será trafegado entre Observer e
+Dessa forma, o design pattern não conhece a sua implementação, mas sabe que um evento será trafegado entre Observer e
 Subject.
 
 Analisando o [CourseRecord](app/src/main/java/pie_chart_observer_ufu/CourseRecord.java)
@@ -113,8 +113,8 @@ public class CourseRecordSubject implements Subject<Vector<CourseRecord>> {
     ...
 ```
 
-Parece que eu nem preciso ler o resto da classe para entender o ela faz, uma vez sabendo o design pattern Observer. É um
-bom nome.
+Parece que eu nem preciso ler o resto da classe para entender o ela faz,
+levando em conta que o leitor conhece o design pattern. CourseRecordSubject é um bom nome.
 
 Observamos o CourseRecordSubject que é um __ConcreteSubject__
 logo, não é interessante extender classes concretas, melhor decompor. As dependências ficaram assim:
